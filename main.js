@@ -15,7 +15,7 @@ app.use(function(req, res, next)
 {
 	console.log(req.method, req.url);
 	client.lpush(urlList, req.url);
-
+	client.ltrim(urlList, 0, 4);
 	// ... INSERT HERE.
 	//client.lpush
 
@@ -73,8 +73,9 @@ app.post('/upload',[ multer({ dest: './uploads/'}), function(req, res){
 	  		if (err) throw err;
 	  		var img = new Buffer(data).toString('base64');
 	  		//console.log(img);
-	  		console.log("Image at " + req.files.image.path + " uploaded successfully");
+	  		console.log("Image uploaded successfully");
 	  		client.lpush(imageQueue, img);
+	  		client.ltrim(imageQueue, 0, 0);
 		});
 	}
 
@@ -82,21 +83,17 @@ app.post('/upload',[ multer({ dest: './uploads/'}), function(req, res){
 }]);
 
 app.get('/meow', function(req, res) {
-	{
-		client.ltrim(imageQueue, 0, 0, function(err, value) {
-			if (!err) {
-				client.lrange(imageQueue, 0, 0, function(err,items){ 
-					if(!err) {
-						res.writeHead(200, {'content-type':'text/html'});
-						items.forEach(function (imagedata)
-						{
-				   			res.write("<h1>\n<img src='data:my_pic.jpg;base64,"+imagedata+"'/>");
-						});
-					   	res.end();
-					}
+	{			
+		client.lrange(imageQueue, 0, 0, function(err, items){ 
+			if(!err) {
+				res.writeHead(200, {'content-type':'text/html'});
+				items.forEach(function (imagedata)
+				{
+		   			res.write("<h1>\n<img src='data:my_pic.jpg;base64,"+imagedata+"'/>");
 				});
+			   	res.end();
 			}
-		});		
+		});
 	}
 })
 
