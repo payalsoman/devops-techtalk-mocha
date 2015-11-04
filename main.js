@@ -23,15 +23,15 @@ app.use(function(req, res, next)
 });
 
 app.get('/', function(req, res) {
-  res.send('hello world\n');
+  res.send('hello world');
 })
 
 app.get('/set', function(req, res) {
 	var key = "key";
-	var value = "this message will self-destruct in 10 seconds";
+	var value = "NCSU";
 	client.set("key", value);
-	client.expire("key", 10);
-	res.send("value set");
+	//client.expire("key", 10000);
+	res.send("value is set");
 })
 
 app.get('/get', function(req, res) {
