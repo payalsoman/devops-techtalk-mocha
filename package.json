@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "mocha": "~2.3.3",
     "chai": "^3.4.0",
     "express": "^4.12.3",
     "multer": "^0.1.8",
