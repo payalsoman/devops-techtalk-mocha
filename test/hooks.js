@@ -3,42 +3,42 @@ var assert = require('assert');
 
 // This is a root level before hook
 before(function () {
-  console.log("Root level - This will be called before every test in every file");
+  console.log("Root level before - This will be called before every test in every file");
 });
 
 // This is root level after hook
 after(function () {
-  console.log("Root level - This will be called after every test in every file");
+  console.log("Root level after - This will be called after every test in every file");
 });
 
 
 
 
-describe('Mocha Hooks', function() {
+describe('Hooks--> Mocha Hooks', function() {
   describe('Block and test level hooks', function () {
     
 
       // Block level before hook
       before(function () {
-        console.log("Block level - Runs before all tests in this block");
+        console.log("Block level before - Runs before all tests in this block");
       });
 
 
       // Block level after hook
       after(function () {
-        console.log("Block level - Runs after all tests in this block");
+        console.log("Block level after - Runs after all tests in this block");
       });
 
 
       // Test level before hook
       beforeEach(function () {
-        console.log("Test level - Runs before each test in this block");
+        console.log("Test level before - Runs before each test in this block");
       });
 
 
       // Test level after hook 
       afterEach(function () {
-        console.log("Test level - Runs after each test in this block");
+        console.log("Test level after - Runs after each test in this block");
       });
 
 

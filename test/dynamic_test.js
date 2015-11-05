@@ -6,11 +6,11 @@ function add() {
   }, 0);
 }
 
-describe('add()', function() {
+describe('DynamicTest--> add()', function() {
   var tests = [
     {args: [1, 2],       expected: 3},
     {args: [1, 2, 3],    expected: 6},
-    {args: [1, 2, -3, 4], expected: 4}
+    {args: [1, 2, 3,4,6], expected: 16}
   ];
 
 tests.forEach(function(test) {
