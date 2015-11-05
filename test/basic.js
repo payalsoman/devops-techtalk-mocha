@@ -4,7 +4,7 @@ var assert = require('assert');
 describe('Basic --> Array', function() {
 
   // This describe block specifies functionality of the component you want to test
-  describe('#indexOf()', function () {
+  describe.skip('#indexOf()', function () {
 
   	//Description of the test
     it('should return -1 when the value is not present', function () {
@@ -19,7 +19,7 @@ describe('Basic --> Array', function() {
 
   	//Description of the test
     it('should return correct length of an array', function () {
-      assert.equal(3, [1,2,3].length);
+      assert.equal(4, [1,2,3].length);
     });
   });
 
