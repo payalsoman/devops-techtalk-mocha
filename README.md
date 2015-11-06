@@ -51,8 +51,8 @@ TechTalk : Mocha
 * To test the sample test case redistest.js we need to run application server, `node main.js`
 
 ### Running Tests using Mocha
-* Run the tests using , `mocha`
-* This will execute all the sample test cases in Test directory.
+* To run specific test case use, `mocha test/*`
+* To execute all the sample test cases in Test directory use, `mocha`
 
 ## Screencast
 
