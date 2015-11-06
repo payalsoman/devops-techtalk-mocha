@@ -45,8 +45,9 @@ Mocha website mentions loads of features of Mocha. Here are some of the importan
 - It runs tests sequentially.
 - Because mocha provides flexibility, it requires additional analysis to determine which tools to integrate, hence consuming time.
 
-**What we think**
-In web development as libraries and tools are keep on evolving, it is important for any framework to be as modular as to incorporate the lastest changes easily. Mocha provides such modular framework design and flexiblity to incorporate any additonal feature by keeping core test framework functionality decoupled from any specific component.
+**What we think : **
+
+- In web development as libraries and tools are keep on evolving, it is important for any framework to be as modular as to incorporate the lastest changes easily. Mocha provides such modular framework design and flexiblity to incorporate any additonal feature by keeping core test framework functionality decoupled from any specific component.
 
 ## Setup Instructions :
 * Clone this repo, run `npm install`.
