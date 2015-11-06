@@ -9,6 +9,7 @@ TechTalk : Mocha
 
 ## High Level Project Report
 **What is Mocha?**
+
 - Mocha is the feature-rich Javascript testing framework running on Node.js.
 - Relatively new. First stable build released in 2012.
 - Simple to setup and is highly extensible.
@@ -29,6 +30,7 @@ TechTalk : Mocha
 | node debugger support |	Mocha allows integration with node debugging tools like node-inspector. |
 
 **Limitations**
+
 - It has limited support as compared to Jasmine and qUnit.
 - It runs tests sequentially.
 - Because mocha provides flexibility, it requires additional analysis to determine which tools to integrate, hence consuming time.
