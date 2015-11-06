@@ -1,6 +1,5 @@
 TechTalk : Mocha
 =========================
-
 ### Team Memebers
 1. Aditya Ambre(abambre)
 2. Chetan Pawar(chpawar)
@@ -10,7 +9,6 @@ TechTalk : Mocha
 
 ### High Level Project Report
 ================================
-
 **What is Mocha?**
 - Mocha is the feature-rich Javascript testing framework running on Node.js.
 - Relatively new. First stable build released in 2012.
@@ -20,6 +18,7 @@ TechTalk : Mocha
 - Comparable to Jasmine and QUnit.
 
 **Features**
+
 | Feature        | Description    |
 | :------------- | :------------- |
 | Support for multiple assertion libraries |	Mocha supports asserion libraries like Chai,expect.js,should.js , better.js |
