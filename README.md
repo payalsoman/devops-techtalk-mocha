@@ -8,6 +8,7 @@ TechTalk : Mocha
 
 
 ## High Level Project Report
+================================
 **What is Mocha?**
 
 - Mocha is the feature-rich Javascript testing framework running on Node.js.
@@ -29,6 +30,7 @@ TechTalk : Mocha
 | Optionally run tests that match a regexp |	Using --grep option mocha can trigger only run tests matching the given pattern. |
 | node debugger support |	Mocha allows integration with node debugging tools like node-inspector. |
 
+
 **Limitations**
 
 - It has limited support as compared to Jasmine and qUnit.
@@ -36,23 +38,17 @@ TechTalk : Mocha
 - Because mocha provides flexibility, it requires additional analysis to determine which tools to integrate, hence consuming time.
 
 
-
-
-### Setup Instructions
+## Setup Instructions
 ================================
 * Clone this repo, run `npm install`.
 * Install redis and run on localhost:6379
 * To test the sample test case redistest.js we need to run application server, `node main.js`
 
 ### Running Tests using Mocha
-
+================================
 * Run the tests using , `mocha`
 * This will execute all the sample test cases in Test directory.
 
-### Paramaterized Mocha runs
-
-* Monitor the source code for change, using `mocha -w`
-
-### Screencast
-
+## Screencast
+================================
 
