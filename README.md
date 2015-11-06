@@ -17,7 +17,7 @@ TechTalk : Mocha
 - Supports assertion libraries like Chai, expect.js and should.js.
 - Comparable to Jasmine and QUnit.
 
-**Features**
+**Features :**
 
 | Feature        | Description    |
 | :------------- | :------------- |
