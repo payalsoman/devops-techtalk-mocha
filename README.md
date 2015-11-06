@@ -18,6 +18,7 @@ TechTalk : Mocha
 - Comparable to Jasmine and QUnit.
 
 **Features :**
+Mocha website mentions loads of features of Mocha. Here are some of the important ones:
 
 | Feature        | Description    |
 | :------------- | :------------- |
@@ -47,13 +48,13 @@ TechTalk : Mocha
 
 ## Setup Instructions :
 * Clone this repo, run `npm install`.
-* Install redis and run on localhost:6379
+* Install redis and run on localhost:6379 (for testing test cases in redistest.js file)
 * To test the sample test case redistest.js we need to run application server, `node main.js`
 
 ### Running Tests using Mocha :
 * To run specific test case use, `mocha test/basic.js`
 * To execute all the sample test cases in Test directory use, `mocha`
 
-## Screencast :
+### Screencast : [video](https://youtu.be/DLpAtuOhhK4) 
 
 
