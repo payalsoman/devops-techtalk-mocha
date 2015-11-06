@@ -1,14 +1,13 @@
 TechTalk : Mocha
 =========================
-### Team Memebers
+## Team Memebers
 1. Aditya Ambre(abambre)
 2. Chetan Pawar(chpawar)
 3. Payal Soman(prsoman)
 4. Viral Sanghavi(vjsangha)
 
 
-### High Level Project Report
-================================
+## High Level Project Report
 **What is Mocha?**
 - Mocha is the feature-rich Javascript testing framework running on Node.js.
 - Relatively new. First stable build released in 2012.
