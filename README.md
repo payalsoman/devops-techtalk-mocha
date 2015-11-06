@@ -31,29 +31,29 @@ TechTalk : Mocha
 | before, after, before each, after each hooks |Mocha provides the hooks before(), after(), beforeEach(), and afterEach(), which can be used to set up preconditions and clean up after your tests. Different types of hooks like root level, test case level provided by mocha. |
 | Test coverage reporting |	Mocha can be easily integrated with different coverage tools like lcov, istanbul etc |
 
-**Mocha v/s other testing frameworks**
+**Mocha v/s other testing frameworks :**
 
 - Asynchronous testing is fairly easy in Mocha than in Jasmine.
 - Jasmine is relatively older and has more support available.
 - Configuration for Mocha is a breeze compared to others.
 - It is difficult to include assertion libraries in qUnit and Jasmine.
 
-**Limitations**
+**Limitations :**
 
 - It has limited support as compared to Jasmine and qUnit.
 - It runs tests sequentially.
 - Because mocha provides flexibility, it requires additional analysis to determine which tools to integrate, hence consuming time.
 
 
-## Setup Instructions
+## Setup Instructions :
 * Clone this repo, run `npm install`.
 * Install redis and run on localhost:6379
 * To test the sample test case redistest.js we need to run application server, `node main.js`
 
-### Running Tests using Mocha
+### Running Tests using Mocha :
 * To run specific test case use, `mocha test/basic.js`
 * To execute all the sample test cases in Test directory use, `mocha`
 
-## Screencast
+## Screencast :
 
 
