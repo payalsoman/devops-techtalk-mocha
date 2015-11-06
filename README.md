@@ -28,7 +28,15 @@ TechTalk : Mocha
 | string diff support |	It can display the difference between what was expected, and what the assertion actually saw. |
 | Optionally run tests that match a regexp |	Using --grep option mocha can trigger only run tests matching the given pattern. |
 | node debugger support |	Mocha allows integration with node debugging tools like node-inspector. |
+| before, after, before each, after each hooks |Mocha provides the hooks before(), after(), beforeEach(), and afterEach(), which can be used to set up preconditions and clean up after your tests. Different types of hooks like root level, test case level provided by mocha. |
+| Test coverage reporting |	Mocha can be easily integrated with different coverage tools like lcov, istanbul etc |
 
+**Mocha v/s other testing frameworks**
+
+- Asynchronous testing is fairly easy in Mocha than in Jasmine.
+- Jasmine is relatively older and has more support available.
+- Configuration for Mocha is a breeze compared to others.
+- It is difficult to include assertion libraries in qUnit and Jasmine.
 
 **Limitations**
 
